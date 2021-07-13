@@ -1,18 +1,6 @@
-// const events = require('events');
-
-// const logger = new events()
-
-// logger.on('message', (msg) => {
-//     console.log(msg)
-// })
-
-// logger.emit("message", "hello world");
-
 const events = require('events');
 
 const logger = new events()
-
-
 
 const users = [];
 const msgs = [];
@@ -30,8 +18,8 @@ logger.on('login', name => {
 })
 
 logger.emit('message', 'there is new message');
-logger.emit('login', 'gev');
-logger.emit('login', 'art');
+logger.emit('login', 'name1');
+logger.emit('login', 'name2');
 
 
 logger.on('getUsers', () => {
@@ -51,3 +39,15 @@ logger.on('getMessage', () => {
 
 logger.emit('getUsers')
 logger.emit('getMessage')
+
+
+// homework
+console.log("----- HI, THERE IS MY HOMEWORK -----")
+
+const minimist = require('minimist')(process.argv.slice(2));
+
+users.push(minimist.addUser);
+msgs.push(minimist.message);
+
+console.log(`Messages: ${msgs}`);
+console.log(`Users: ${users}`);

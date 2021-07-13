@@ -1,0 +1,22 @@
+{
+  "name": "event-lesson",
+  "version": "1.0.0",
+  "description": "homework",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GevorgMartirosyan8878/event-lesson.git"
+  },
+  "author": "Gevorg Martirosyan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GevorgMartirosyan8878/event-lesson/issues"
+  },
+  "homepage": "https://github.com/GevorgMartirosyan8878/event-lesson#readme",
+  "dependencies": {
+    "minimist": "^1.2.5"
+  }
+}
