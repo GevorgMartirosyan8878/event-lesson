@@ -21,10 +21,4 @@ function addData(arr, property) {
     property
         ? arr.push(property)
         : arr.push('There is no any data')
-
-    // if (property) {
-    //     arr.push(property)
-    // } else {
-    //     arr.push('There is no any data')
-    // }
 }
