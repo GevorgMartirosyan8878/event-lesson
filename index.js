@@ -18,9 +18,13 @@ getUsers.emit("addUsers", users, argv.addUser);
 console.log(users);
 
 function addData(arr, property) {
-    if (property) {
-        arr.push(property)
-    } else {
-        arr.push('There is no any data')
-    }
+    property
+        ? arr.push(property)
+        : arr.push('There is no any data')
+
+    // if (property) {
+    //     arr.push(property)
+    // } else {
+    //     arr.push('There is no any data')
+    // }
 }
